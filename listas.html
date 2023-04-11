@@ -7,46 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogos Jogados</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        li.serie {
+            color: green;
+        }
+
+        li.filme {
+            color: blue;
+        }
+
+        .jogos {
+            color: red;
+        }
+
+        p>.jogos {
+            border-bottom: dashed green;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1>Jogos Jogados</h1>
-       
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./">Listas</a></li>
-                    <li><a href="./outra.html">Outra</a></li>
-                </ul>
-            </nav>
+
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./">Listas</a></li>
+                <li><a href="./outra.html">Outra</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
 
         <p>Ultimos tres jogos que eu joguei</p>
         <ol>
-            <li>Resident Evil 4</li>
-            <li>Gartic</li>
-            <li>Paciência</li>
-            <li>Xadrez</li>
+            <li class="jogos">Resident Evil 4</li>
+            <li class="jogos">Gartic</li>
+            <li class="jogos">Paciência</li>
+            <li class="jogos">Xadrez</li>
         </ol>
+        <p>E o <span class="jogos">Resident Evil 4</span> foi meu favorito</p>
         <p>Filmes e séries que assiti:</p>
         <ul>
             <li>
                 <div>
                     <div style="font-weight: bold;">Filmes</div>
                     <ul>
-                        <li  style="color: blue;">Top Gun</li>
-                        <li  style="color: blue;">O Senhor dos Anéis - A sociedade do Anel</li>
+                        <li class="filme">Top Gun</li>
+                        <li class="filme">O Senhor dos Anéis - A sociedade do Anel</li>
                     </ul>
                 </div>
             </li>
             <li>
                 <div>
                     <div style="font-weight: bold;">Séries</div>
-                    <ul style="color: green">
-                        <li>Avatar - A lenda de Ang</li>
-                        <li>Stranger Things</li>
+                    <ul>
+                        <li class="serie">Avatar - A lenda de Ang</li>
+                        <li class="serie">Stranger Things</li>
                     </ul>
                 </div>
             </li>
